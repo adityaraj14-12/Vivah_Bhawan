@@ -1,0 +1,165 @@
+/* Basic Styles */
+.header {
+    background: black;
+    color: #000;
+    padding: 0.8rem 0;
+    text-align: center;
+    position: relative;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.logo img {
+    max-width: 120px;
+}
+
+.venue-names {
+    flex: 1;
+    text-align: center;
+}
+
+.venue-names h1 {
+    margin: 0.5rem 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #00aaff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.contact-info {
+    text-align: right;
+}
+
+.contact-info p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fdf7d0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.contact-info a {
+    color: #fdf7d0;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.menu-icon-bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 4px 0;
+    transition: transform 0.3s ease;
+}
+
+.menu-icon:hover {
+    background-color: #fbc02d;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: #2b00ff;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links a:hover {
+    background-color: #ff5722;
+    color: #fff;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .contact-info {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        max-height: 0;
+        overflow: hidden;
+        background: linear-gradient(135deg, #e75d33, #fbc02d, #8bc34a);
+        flex-direction: column;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    .nav.open {
+        max-height: 100vh;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+    }
+
+    .nav-links a {
+        padding: 1.5rem 2rem;
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,104 @@
+/* Home.css */
+
+.home-page {
+    padding: 1rem;
+    background: rgb(0, 0, 0); /* Gradient background */
+    color: #ffffff; /* White color for text */
+  }
+  
+  .welcome-text {
+    margin-top: 1rem;
+    text-align: left;
+  }
+  
+  .welcome-text h1 {
+    text-align: center;
+    margin: 0.5rem 0;
+    font-size: 3rem; /* Larger font size */
+    font-weight: bold;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* 3D text shadow effect */
+    color: #ffffff;
+    background: linear-gradient(135deg, #ff5722, #fbc02d, #8bc34a, #03a9f4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .content {
+    margin-top: 1rem;
+  }
+  
+  .venue-section {
+    margin-bottom: 2rem;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  
+  .venue-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .venue-image {
+    max-width: 40%; /* Image size */
+    height: auto;
+    border-radius: 10px;
+    margin: 1rem;
+  }
+  
+  .venue-text {
+    max-width: 55%; /* Text width */
+    margin: 1rem;
+    font-size: 1rem; /* Font size */
+    color: #ffffff; /* White color for text */
+    line-height: 1.5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 3D text shadow effect */
+  }
+  
+  .venue-text h2 {
+    font-size: 1.5rem; /* Title font size */
+    color: #ff5722; /* Color for titles */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 3D text shadow effect */
+  }
+  
+  .venue-text h3 {
+    font-size: 1.75rem; /* Sub-title font size */
+    color: #fbc02d; /* Color for sub-titles */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 3D text shadow effect */
+  }
+  
+  .venue-text ul {
+    padding-left: 1.5rem;
+  }
+  
+  .venue-text li {
+    margin: 0.5rem 0;
+  }
+  .venue-text li strong {
+    color: #ff5722; /* Color for highlights */
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    .venue-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .venue-image,
+    .venue-text {
+      max-width: 100%;
+      margin: 1rem 0;
+    }
+  
+    .venue-text {
+      text-align: center;
+    }
+  
+    .venue-text p {
+      text-align: center;
+    }
+  }
+  

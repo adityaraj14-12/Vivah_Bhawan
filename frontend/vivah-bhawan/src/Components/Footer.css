@@ -1,0 +1,130 @@
+/* Footer.css */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0rem;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 1rem;
+    padding: 0 5rem;
+  }
+  
+  .footer-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ff5722; /* Bright color for headers */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 3D text effect */
+  }
+  
+  .footer-section h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #fbc02d; /* Color for sub-headers */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 3D text effect */
+  }
+  
+  .footer-section p, .footer-section ul {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 0.5rem 0;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #ff5722; /* Change color on hover */
+    text-decoration: underline;
+  }
+  
+  .social-icons {
+    margin-top: 1rem;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #ff5722; /* Change icon color on hover */
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+  }
+  
+  .footer-section .explore-columns {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .explore-columns ul {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    font-size: 0.875rem; /* Smaller font size for footer bottom text */
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      text-align: center;
+      margin: 1rem 0;
+    }
+  
+    .footer-section ul {
+      padding-left: 0;
+    }
+  
+    .explore-columns {
+      flex-direction: column;
+    }
+  
+    .explore-columns ul {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  
+    .social-icons {
+      margin-top: 1rem;
+    }
+  }
+  

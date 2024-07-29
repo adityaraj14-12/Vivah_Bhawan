@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #000000;
+  
+}
+
+.events {
+  padding: 40px;
+  background: linear-gradient(145deg, #000000, #000000);
+  box-shadow: 10px 10px 20px #0e0e0e, -10px -10px 20px #363636;
+  border-radius: 20px;
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.events h1 {
+  font-size: 36px;
+  color: #FF4081; /* Pink color for heading */
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.events p {
+  font-size: 18px;
+  color: #E0E0E0;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.events ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.events ul li {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #B3E5FC; /* Light blue for list items */
+  position: relative;
+  padding-left: 25px;
+}
+
+.events ul li:before {
+  content: '•';
+  color: #FFEB3B; /* Yellow for bullet points */
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.events p:last-child {
+  font-size: 16px;
+  color: #B0BEC5;
+  margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+  .events {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .events h1 {
+    font-size: 28px;
+  }
+
+  .events p, .events ul li {
+    font-size: 16px;
+  }
+}
